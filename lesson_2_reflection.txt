@@ -14,15 +14,37 @@ Acts as a temporary hold to add files which are relevant for a given commit. All
 
 
 How can you use the staging area to make sure you have one commit per logical
-change?
+ change?
+
+
+
+Use git diff and git diff --staged to compare changes made to ensure that only one logical change is brought about by the change.
+
 
 What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+ organized? How would branches help?
+
+Adding experimental features, changing a language/color setting while maintaining all features of the original.
+Allows for changes to be made independent of the master branch.
+
+
+
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
+Visualises words in a simple 2-D illustration
+
+
+
+
+What is the result of merging two branches together? Why do we represent it in 
 the diagram the way we do?
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+Both branches act as a single branch. The resultant branch is composed of two branches which diverged at an earlier point and are now merged together to form a single one.
+
+
+What are the pros and cons of Git's automatic merging vs. always doing merges 
 manually?
+
+Pros: Shortens merging time when there are no conflicts
+Cons: Merged (without conflict) files may result in unforeseen bugs
