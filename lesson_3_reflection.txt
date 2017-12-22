@@ -10,18 +10,26 @@ No need for a constant internet connection, to avoid overriding of changes made 
 
 Describe the differences between forks, clones, and branches.  When would you use one instead of another?
 
-
+Forks are clones of another person's repository on GitHub for which one is not able to effect changes.
+Clones are copies of repositories from GitHub which is shared or copies within a local computer.
+Branches are separate lines of commits, allowing for different features to be added separate from the master branch.
+  Useful when collaborating with persons with different ideas on implementing a novel function.
 
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
-
+All changes done locally will be effected on the latest version of the remote.
 
 
 How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
-
+Use some form of cloud service to share files; emailing.
+Easier: N/A
+Harder: Merging changes from multiple sources, possible manually
 
 
 When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
+When making changes that may cause issues to an object that is working properly without issues.
+Master: Simpler and more streamlined, no conflicting issues with merging
+Branch: New feature added is novel and may disrupt the proper function as per master branch.
